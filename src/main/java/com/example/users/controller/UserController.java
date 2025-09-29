@@ -31,4 +31,9 @@ public class UserController {
                 pagination
         );
     }
+
+    @GetMapping("")
+    public String getIndex() {
+        return "Hello Java!";
+    }
 }
