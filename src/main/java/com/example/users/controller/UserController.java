@@ -7,7 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.*;
 
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "http://localhost:3000",
+        "https://corporate-banking-app-frontend.vercel.app"
+})
 @RestController
 public class UserController {
 
